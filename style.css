@@ -2,9 +2,59 @@
     box-sizing: border-box;
 }
 
-th, td {
-    border: 1px solid black;
-    background-color: pink;
-    width:100px;
-    height: 40px;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: coral;
+    padding: 3rem 0;
+}
+
+nav {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+.container-flex {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+label, button {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input {
+    width: 70%;
+    padding: 0.5rem;
+}
+
+th,
+td {
+    width: 2rem;
+    height: 2rem;
+    background-color: darkcyan;
+}
+
+.data-input,table {
+    margin: 1rem 0;
+}
+
+.data-input,
+.data-store {
+    /* justify-content: space-around; */
+    border: 3px solid black;
+}
+
+@media (min-width: 675px) {
+    .container-flex {
+        flex-direction: row;
+
+    }
 }
